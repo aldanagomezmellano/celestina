@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<style>
+    body {
+        background-image: url(https://www.solprof.com/sites/default/files/fondo-01.jpg);
+    }
+
+
+    #h4 {
+        background-color: #FF637D;
+        padding: 4px;
+    }
+
+    .needs-validation {
+        border: 1px solid black;
+        background-color: #E0BBE4;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin: 5px;
+        box-shadow: 0 0 20px 5px;
+    }
+
+    #button {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 30px;
+        padding-left: 30px;
+        ;
+        background-color: #66D7D1;
+        border-radius: 15%;
+        border: 1px solid black;
+        font-size: large;
+    }
+</style>
+
+<head>
+    <title>Servicios</title>
+    <link rel="icon" type="image/png" href="https://icon-icons.com/icons2/1550/PNG/32/cauldron_107364.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="../index.html"> <img
+                    src="https://icon-icons.com/icons2/1629/PNG/32/3808217-cauldron-halloween-pot-potion-witch_109086.png">
+                Sabrina tu Celestina -en línea-</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Cosméticos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contactos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quienesSomos.html">¿Quién Soy?</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <form class="needs-validation" novalidate action="servicioSolicitado.html">
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <h5> <b>Solicitante</b> </h5>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="validationTooltip01">Nombre</label>
+                        <input type="text" class="form-control" id="fdNombreSolicitante" placeholder="Ej: Calisto"
+                            required>
+                        <div class="valid-tooltip">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="validationTooltip02">Apellido</label>
+                        <input type="text" class="form-control" id="fdApellidoSolicitante" value="" required>
+                        <div class="valid-tooltip">
+                            Looks good!
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="validationTooltip01">Edad</label>
+                        <input type="text" class="form-control" id="fdEdadSolicitante" value="" required>
+                        <div class="valid-tooltip">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="validationTooltip02">Descripción(lo que necesitaría resaltar de Usted)</label>
+                        <textarea class="form-control" cols="30" rows="5"
+                            placeholder="Ej: Caballero mancebo, hombre gentil de noble sangre. Lleno de gracias. Comparado a Héctor en fuerza y a Alejandro en franqueza. Alegre y gracioso. Gran desenvoltura. Tan hermoso como un ángel del cielo. Muy apasionado y sensible. En mi tiempo libre me dedico a la cetrería."
+                            id="fdDescripcionSolicitante"></textarea>
+                        <div class="valid-tooltip">
+                            Looks good!
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="">Ciudad</label>
+                        <input type="text" class="form-control" id="fdDomicilioSolicitante" required>
+                        <div class="invalid-tooltip">
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="validationTooltip04">Servicio Adicional (opcional)</label>
+                        <select class="custom-select" id="servicioDropDown" required>
+                            <option selected disabled value="">Seleccionar</option>
+                            <option value="Amarres">Amarres</option>
+                            <option value="Enamoramiento">Enamoramiento</option>
+                            <option value="Hechicerías">Hechicerías</option>
+                        </select>
+                        <div class="invalid-tooltip">
+                            Please select a valid state.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <h5> <b>Forma de Pago</b> </h5>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-3 mb-3">
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="check1" value="Cadena de Oro">
+                            <label class="form-check-label" for="check1">Cadena de Oro</label>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="check2" value="Efectivo">
+                            <label class="form-check-label" for="check2">Efectivo</label>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="check3" value="Transferencia">
+                            <label class="form-check-label" for="check3">Transferencia</label>
+                        </div>
+                    </div>
+                </div>
+                <br></br>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <h5 id="label-2"> <b>Objetivo</b> </h5>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="validationTooltip01">Nombre</label>
+                        <input type="text" class="form-control" id="fdNombreObjetivo" placeholder="Ej: Melibea"
+                            required>
+                        <div class="valid-tooltip">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="validationTooltip02">Apellido</label>
+                        <input type="text" class="form-control" id="fdApellidoObjetivo" value="" required>
+                        <div class="valid-tooltip">
+                            Looks good!
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="validationTooltip01">Edad</label>
+                        <input type="text" class="form-control" id="fdEdadObjetivo" value="" required>
+                        <div class="valid-tooltip">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="validationTooltip02">Dirección</label>
+                        <input type="text" class="form-control" id="fdDomicilioObjetivo" value="" required>
+                        <div class="valid-tooltip">
+                            Looks good!
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <textarea class="form-control" cols="60" rows="5"
+                            placeholder="Ej: Mujer discreta, gentil y cautelosa, de buen linaje. Es tan hermosa y su grado de perfección es tal, que Helena de Troya y la diosa Venus, estarían envidiosas de ella."
+                            id="fdDescripcionObjetivo"></textarea>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <input type="submit" width="100%" onclick="getData()">
+                </div>
+                <!--<a href="servicioSolicitado.html" type="button" id="button"> Enviar</a>-->
+            </form>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <footer>
+        <div class="container-fluid">
+            <br></br>
+            <div class="row">
+                <div class="col-4" width="100%">
+
+                    <p>©3er Parcial - Literatura Española I
+                    </p>
+                </div>
+
+            </div>
+    </footer>
+    <script src="../js/formController.js"></script>
+</body>
+
+</html>
